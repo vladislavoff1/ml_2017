@@ -13,7 +13,7 @@ public class App {
     public static void main(String[] args) {
         //Для сборки новой ИНС необходимо создасть список слоев
         List<Layer> layerList = new ArrayList<Layer>();
-        layerList.add(Layer.create(15, ActivationFunction.FANN_SIGMOID_SYMMETRIC, 0.01f));
+        layerList.add(Layer.create(9, ActivationFunction.FANN_SIGMOID_SYMMETRIC, 0.01f));
         layerList.add(Layer.create(50, ActivationFunction.FANN_SIGMOID_SYMMETRIC, 0.01f));
         layerList.add(Layer.create(1, ActivationFunction.FANN_SIGMOID_SYMMETRIC, 0.01f));
         Fann fann = new Fann(layerList);
@@ -30,6 +30,4 @@ public class App {
         );
         fann.save("ann");
     }
-
-
 }

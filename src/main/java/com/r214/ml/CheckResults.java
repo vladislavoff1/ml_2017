@@ -37,21 +37,21 @@ public class CheckResults {
                 {1108, 13, 0, 0, 5, 222, 0, 0, 99, 0, 1, 0, 1, 1, 1}
         };
 
-//        for (float[] test : tests) {
-//            System.out.println(getAction(fann.run(test)));
-//        }
-
-
-        String[] titles = {"друзья", "подписчики", "аудиозаписи", "видеозаписи", "фото", "лайков на аве", "постов за неделю", "постов за месяц >50?", "интересные страницы", "галочка", "картинка(0) или фото(1)", "личная инфо (работа, город, учеба)", "имя", "подарки", "репосты"};
-        float[] test = new float[15];
-
-        for (int i = 0; i < titles.length; i++) {
-            System.out.print(titles[i] + ": ");
-
-            String input = scanner.nextLine();
-            test[i] = Float.parseFloat(input);
+        for (float[] test : tests) {
+            System.out.println(getAction(fann.run(test)));
         }
-        System.out.println("Результат: " + getAction(fann.run(test)));
+
+
+//        String[] titles = {"друзья", "подписчики", "аудиозаписи", "видеозаписи", "фото", "лайков на аве", "постов за неделю", "постов за месяц >50?", "интересные страницы", "галочка", "картинка(0) или фото(1)", "личная инфо (работа, город, учеба)", "имя", "подарки", "репосты"};
+//        float[] test = new float[15];
+//
+//        for (int i = 0; i < titles.length; i++) {
+//            System.out.print(titles[i] + ": ");
+//
+//            String input = scanner.nextLine();
+//            test[i] = Float.parseFloat(input);
+//        }
+//        System.out.println("Результат: " + getAction(fann.run(test)));
     }
 
     private static String getAction(float[] out) {
