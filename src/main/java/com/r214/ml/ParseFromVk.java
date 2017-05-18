@@ -329,8 +329,8 @@ public class ParseFromVk {
                                     "    pages: " + pages + ", " + '\n' +
                                     "    gifts: " + gifts + ", " + '\n' +
                                     "    notes: " + notes + ", " + '\n' +
-                                    "    groups: " + groups + ", " + '\n' +
-                                    "    lastSeen: " + lastSeenTime + ", " + '\n'
+                                    "    groups: " + groups + ", " + '\n'
+//                                    "    lastSeen: " + lastSeenTime + ", " + '\n'
                     );
 
                     String params = String.join(" ", friends, followers, audios, videos, photos, pages, gifts, notes, groups);

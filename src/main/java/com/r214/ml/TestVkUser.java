@@ -127,8 +127,8 @@ public class TestVkUser {
                                     "    pages: " + pages + ", " + '\n' +
                                     "    gifts: " + gifts + ", " + '\n' +
                                     "    notes: " + notes + ", " + '\n' +
-                                    "    groups: " + groups + ", " + '\n' +
-                                    "    lastSeen: " + lastSeenTime + ", " + '\n'
+                                    "    groups: " + groups + ", " + '\n'
+//                                    "    lastSeen: " + lastSeenTime + ", " + '\n'
                     );
 
                     float[] res = fann.run(new float[]{friends, followers, audios, videos, photos, pages, gifts, notes, groups, lastSeenTime});
